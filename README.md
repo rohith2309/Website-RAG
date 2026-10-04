@@ -117,3 +117,13 @@ Improved sitemap crawling, if pdfs are present, introduce complex workflow that 
 This project is currently intended for personal or internal use unless otherwise specified.
 
 
+## Sample Questions
+
+what are the cars offered by tata?
+what are the engine options available?
+I want to know more about aeris
+can you compare 3xo with nexon
+what is the price of xuv 7x0?
+Which of your SUVs are equipped with a panoramic sunroof and ventilated seats?
+Can I book a test drive for the new Tata Swift?
+What is the exact waiting period for the Tata Harrier Fearless Plus Dark Edition in Bangalore today?

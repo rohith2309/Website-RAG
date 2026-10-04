@@ -19,7 +19,7 @@ def setup_rag_chain(vectorstore=None):
         )
     
     llm = ChatBedrockConverse(
-        model="amazon.nova-lite-v1:0",
+        model="us.amazon.nova-pro-v1:0",
         temperature=0,
         region_name='us-east-1',
         aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
