@@ -30,11 +30,10 @@ if "kb_created" not in st.session_state:
 # Sidebar for setup
 with st.sidebar:
     st.header("⚙️ Setup Knowledge Base")
-    
-    max_pages = st.slider("Max pages to crawl :", min_value=5, max_value=20, value=10)
-    depth = st.slider("Max depth to crawl:", min_value=1, max_value=5, value=3)
-    url = st.text_input("Enter URL to crawl:", placeholder="https://www.wilsonart.com")
-   
+    st.info("NOTE: This prototype is based on sitemap crawling. Please provide a valid sitemap URL for the website you want to crawl. Eg: https://www.wilsonart.com, https://tata.cars")
+    url = st.text_input("Enter URL to crawl:", placeholder="https://www.wilsonart.com",value="https://tata.cars")
+    if url.endswith("/"):
+        url = url[:-1]  # Remove trailing slash since it is handled by get_sitemap_function
     
     if st.button("🔄 Create Knowledge Base", use_container_width=True):
         if url :

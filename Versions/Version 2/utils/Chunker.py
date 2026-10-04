@@ -20,4 +20,6 @@ def chunk_documents(docs):
         raise ValueError("The crawl returned no text long enough to index.")
 
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    return FAISS.from_documents(split_docs, embeddings)
+    faiss_index = FAISS.from_documents(split_docs,embeddings)
+    faiss_index.save_local("./faiss_index")
+    return faiss_index
